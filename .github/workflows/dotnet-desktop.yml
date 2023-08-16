@@ -97,5 +97,8 @@ jobs:
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: MSIX Package
-        path: ${{ env.Wap_Project_Directory }}\AppPackages
+        name: SharpADUserIP
+        path: |
+          SharpADUserIP\bin\Debug\SharpADUserIP.exe
+          SharpADUserIP\bin\Debug\Confused\SharpADUserIP.exe
+        
